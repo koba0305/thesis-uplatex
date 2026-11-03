@@ -1,5 +1,7 @@
 # upLaTeX 版の卒業論文
 
+## 📄 [ここを押すと論文PDFが読めます](main.pdf)
+
 `thesis` から章本文・参考文献・図・表をコピーした独立した作業用プロジェクトです。今後はこちらの `chapters/` を編集してください。元の `thesis/` とは自動同期しません。
 
 ## ビルド
@@ -7,7 +9,7 @@
 TeX Live の upLaTeX、latexmk、Biber、dvipdfmx を使います。
 
 ```sh
-cd '/Users/yume/大学に持ってく/latex-test/thesis-uplatex'
+cd '/Users/yume/大学に持ってく/thesis-uplatex'
 latexmk main.tex
 ```
 
