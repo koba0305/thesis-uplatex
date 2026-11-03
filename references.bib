@@ -1,0 +1,423 @@
+% =========================================================
+% Glitch / Noise
+% =========================================================
+
+
+% 【技術的ノイズの基礎】
+% 画像処理におけるノイズモデルのレビュー。
+% Gaussian noise / Salt-and-pepper noise などを整理している。
+% グリッチアート論ではなく、「画像のノイズとは技術的に何か」を説明するために使う。
+% → 第2章の技術的背景、または第3章の表現設計で使えそう？
+% 自分メモ：なんかグリッチの定義について長々と話された。事故的なものであるとか
+@article{boyat2015noise,
+  author  = {Boyat, Ajay Kumar and Joshi, Brijendra Kumar},
+  title   = {A Review Paper: Noise Models in Digital Image Processing},
+  journal = {Signal \& Image Processing: An International Journal},
+  volume  = {6},
+  number  = {2},
+  pages   = {63--75},
+  year    = {2015},
+  doi     = {10.5121/sipij.2015.6206}
+}
+
+
+% 【グリッチ研究の基礎文献】
+% Rosa Menkmanによるグリッチ研究の代表的な本。
+% 「事故としてのglitch」と「意図的に作られたglitch」の問題も重要。
+% → 第1章のグリッチ導入、第2章のグリッチアート史・定義に使う。
+% 自分メモ：
+% ・p.12～17 技術的noise/artifact
+% ・p.26～40 glitchの知覚・定義・意図的glitch
+% ・p.46～53 simulation/filter化の話
+@book{menkman2011momentum,
+  author    = {Menkman, Rosa},
+  title     = {The Glitch Moment(um)},
+  series    = {Network Notebooks},
+  number    = {4},
+  publisher = {Institute of Network Cultures},
+  address   = {Amsterdam},
+  year      = {2011},
+  isbn      = {978-90-816021-6-7},
+  url       = {https://networkcultures.org/blog/publication/no-04-the-glitch-momentum-rosa-menkman/}
+}
+
+
+% 【短いグリッチ宣言／思想】
+% MenkmanのGlitch Studies Manifesto。
+% https://beyondresolution.info/Glitch-Studies-Manifesto
+% 意図的に量産される「グリッチ風エフェクト」への批判的視点もある。
+% → 第2章のグリッチ定義の補強に使いやすい。
+% 自分メモ：ふざけたサイトのやつ
+% ・見た目より「壊れていること」が原義という感じ。
+@incollection{menkman2011manifesto,
+  author    = {Menkman, Rosa},
+  title     = {Glitch Studies Manifesto},
+  editor    = {Lovink, Geert and Somers Miles, Rachel},
+  booktitle = {Video Vortex Reader II: Moving Images Beyond YouTube},
+  pages     = {336--347},
+  publisher = {Institute of Network Cultures},
+  address   = {Amsterdam},
+  year      = {2011},
+  isbn      = {978-90-78146-12-4}
+}
+
+
+% 【Pure Glitch / Glitch-alike】
+% Moradiによる有名な分類。
+% 実際の偶発的な故障・エラーによるPure Glitchと、
+% その見た目を意図的に模倣したGlitch-alikeを区別する。
+% → 自分の作品は明らかに「意図的に設計されたグリッチ」なので関連性が高い。
+% → 第2章の定義・分類に使いたい。
+% 自分メモ：重要そうだが全文は有料／入手しにくい。後続研究から参照？
+@thesis{moradi2004glitch,
+  author      = {Moradi, Iman},
+  title       = {Glitch Aesthetics},
+  type        = {BA (Hons) dissertation},
+  institution = {The University of Huddersfield},
+  school      = {School of Design Technology, Department of Architecture},
+  year        = {2004}
+}
+
+
+% 【メディアアート／デザイン視点のグリッチ】
+% 新メディアアートとしてグリッチを論じる。
+% なんか気になったの発見。メディア・アートとかいう観点から見てる？デザインっぽい文脈で嫌いじゃない
+%グリ作ってもらってインタビュー記事
+% 技術だけでなく視覚表現・メディアアート側から説明したいときに使えそう。
+% → 第2章のグリッチ分類・デザイン文脈。
+% 自分メモ：
+% ・かなりデザイン系の文脈で読みやすかった。
+% ・Moradi / Menkman / Sotirakiの分類表が便利。
+% ・原典を探すための案内図として使う。訳置いとくhttps://docs.google.com/document/d/13B4S2CADfhXWRi3hONCf6vcUh_y1WTZ-b1KKpcQFwj8/edit?usp=sharing
+@article{bedireristi2019glitch,
+  author  = {Bedir Erişti, Suzan Duygu and Göç, Selime},
+  title   = {Yeni Medya Sanatı Olarak 'Glitch' İleti Sürecinin Sorgulanması},
+  journal = {YEDİ: Sanat, Tasarım ve Bilim Dergisi},
+  number  = {22},
+  pages   = {113--128},
+  year    = {2019},
+  doi     = {10.17484/yedi.511776},
+  url     = {https://dergipark.org.tr/tr/pub/yedi/article/511776}
+}
+
+
+% 【グリッチアートの定義・美学】
+% Manon & Temkinによるグリッチ美学の議論。
+% 「ミス」「事故」をどう芸術として扱うかを比較的整理して説明している。
+% 意図的すぎるものはglitchではなくglitch-likeとみなす議論も重要。
+% → 第2章の定義・美学。
+% 自分メモ：
+% アートっぽくていい
+%上のと似てるけどもっとかっちりしてる
+%グリッチアートの定義
+%間違いをミーム化することにより印象を柔らかくする側面もある的な
+%あまりにも意図的すぎる作品は「グリッチ風」として却下
+%コード風の文化だよね
+%割とわかりやすクグリッチアートを述べている
+@article{manon2011notes,
+  author  = {Manon, Hugh S. and Temkin, Daniel},
+  title   = {Notes on Glitch},
+  journal = {World Picture},
+  number  = {6},
+  year    = {2011},
+  url     = {https://worldpicturejournal.com/article/notes-on-glitch/}
+}
+
+
+% 【グリッチを計算可能な操作として扱う】
+% 元画像へ複数のglitch operationを適用し、glitch recipeとして生成する研究。
+% visual impactなども扱う。
+% → 自分の複数グリッチ処理の設計・分類と比較できそう。
+% 自分メモ：有料なので未読。後でアクセスできれば読む。
+@inproceedings{denheijer2013evolving,
+  author    = {den Heijer, Eelco},
+  title     = {Evolving Glitch Art},
+  booktitle = {Evolutionary and Biologically Inspired Music, Sound, Art and Design},
+  series    = {Lecture Notes in Computer Science},
+  volume    = {7834},
+  pages     = {109--120},
+  publisher = {Springer},
+  year      = {2013},
+  doi       = {10.1007/978-3-642-36955-1_10}
+}
+
+
+% 【リアルタイム・グリッチの先行研究】
+% Webカメラ入力へリアルタイムにデータモッシングを適用する研究。
+% 完成済み映像を再生するのではなく、入力に応じてその場で変化する。
+% → 「インタラクティブ／リアルタイムなグリッチ」の重要な先行例。
+% → 第2章の関連研究にかなり使いやすい。
+% 自分メモ：
+% ・データモッシュそのものの説明も分かりやすい。
+% ・自分はWebカメラではなく端末の傾き等を入力にする点が違う。
+@article{ito2013datamoshing,
+  author  = {井藤 雄一 and カール ストーン and 山田 雅之 and 宮崎 慎也},
+  title   = {{Web}カメラの入力を用いたリアルタイムデータモッシングの表現手法},
+  journal = {映像情報メディア学会誌},
+  volume  = {67},
+  number  = {11},
+  pages   = {J413--J416},
+  year    = {2013},
+  doi     = {10.3169/itej.67.J413}
+}
+
+
+% 【MoCapのエラーをグリッチとして利用】
+% リアルタイムモーションキャプチャの失敗を創作素材にする研究。
+% エラーを複数カテゴリーに分類している。
+% 自分メモ：読んだが、MoCap固有すぎて自分の研究にはほぼ使わなそう。
+% → ひとまず保留／削除候補。
+@inproceedings{jurgens2020glitch,
+  author    = {Jürgens, Stephan and Correia, Nuno N. and Masu, Raul},
+  title     = {Designing Glitch Procedures and Visualisation Workflows for Markerless Live Motion Capture of Contemporary Dance},
+  booktitle = {Proceedings of the 7th International Conference on Movement and Computing},
+  pages     = {1--8},
+  publisher = {Association for Computing Machinery},
+  year      = {2020},
+  doi       = {10.1145/3401956.3404225}
+}
+
+
+% 【ゲーム×グリッチ】
+% グリッチアートの制作過程そのものをゲームのように楽しませる研究。
+% 「グリッチ＋別媒体」という点で、自分の「グリッチ＋ライブ壁紙」と比較しやすい。
+% → 第2章の関連事例に使えそう。
+% 自分メモ：悪くない。グリッチ×何か、と言う点では同じだし構成には結構参考になる。グリッチ・アートの制作過程をゲームのように楽しめるものにすることを目的
+@inproceedings{amano2025games,
+  author    = {Amano, Noriki},
+  title     = {Glicth Art based on Digital Games},
+  booktitle = {Proceedings of the 2025 12th International Conference on Digital and Interactive Arts: Media Art Cultures, Communities \& Territories},
+  pages     = {1--7},
+  publisher = {Association for Computing Machinery},
+  year      = {2025},
+  doi       = {10.1145/3773699.3773919}
+}
+
+
+% 【グリッチ音楽史／失敗の美学】
+% コンピュータ音楽において、故障やエラーそのものを素材として用いる
+% post-digitalな潮流を整理した有名な論文。
+% → 視覚グリッチに直接は使わないが、グリッチアート史の背景には使える。
+% 自分メモ：
+% ・音楽グリッチ史がかなり分かりやすい。
+% ・「要は現代美術だよね」という感触。
+@article{cascone2000failure,
+  author  = {Cascone, Kim},
+  title   = {The Aesthetics of Failure: ``Post-Digital'' Tendencies in Contemporary Computer Music},
+  journal = {Computer Music Journal},
+  volume  = {24},
+  number  = {4},
+  pages   = {12--18},
+  year    = {2000},
+  doi     = {10.1162/014892600559489}
+}
+
+
+% 【ファイル形式ごとのグリッチ実例集】
+% 同じ画像を異なるファイル形式・圧縮・破損方法で処理し、
+% 各形式特有のartifactを視覚的に示した作品／研究資料。
+% → グリッチの「見え方の種類」の具体例として使える。
+% ただし普遍的な分類表ではない。
+% 自分メモ：
+% ・Manifesto系譜。
+% ・見た目でもかなり遊んでいる。
+% ・論文内でもグリッチ画像の実例資料としてなら使えそう。
+@online{menkman2010vernacular,
+  author  = {Menkman, Rosa},
+  title   = {A Vernacular of File Formats},
+  year    = {2010},
+  url     = {https://beyondresolution.info/A-Vernacular-of-File-Formats-1},
+  urldate = {2026-09-03}
+}
+
+% =========================================================
+% Live Wallpaper / HCI
+% =========================================================
+
+% Android公式資料
+@online{android_wallpaper_service,
+  author  = {{Android Developers}},
+  title   = {{WallpaperService}},
+  url     = {https://developer.android.com/reference/android/service/wallpaper/WallpaperService},
+  urldate = {2026-09-03}
+}
+
+@online{android16_wallpaper,
+  author       = {McCullough, Matthew},
+  title        = {The Second Beta of {Android} 16},
+  organization = {Android Developers Blog},
+  date         = {2025-02-13},
+  url          = {https://android-developers.googleblog.com/2025/02/second-beta-android16.html},
+  urldate      = {2026-09-03}
+}
+
+% 【ライブ壁紙の日常性・手軽なアクセス】
+% Androidのライブ壁紙を利用して、
+% 第二言語の語彙をユーザに暗黙的に学習させる研究。
+%
+% アプリを能動的に起動しなくても、
+% 普段から目にする壁紙を利用することで情報提示できる点が重要。
+%
+% → 「ライブ壁紙は日常的に接触する媒体」
+% → 「何かへの手軽なアクセスを提供できる」
+% という研究背景の根拠として使えそう。
+%
+% 自分メモ：
+% ・ライブ壁紙そのものの表現研究ではない。
+% ・ただし、壁紙の日常性を示す例としてかなり使いやすい。
+% ・「スマホを使うついでに情報へ触れる」という観点。
+%
+% 使いどころ候補：
+% 第1章 研究背景
+% 第2章 ライブ壁紙を利用した関連研究
+@inproceedings{dearman2012wallpaper,
+  author    = {Dearman, David and Truong, Khai N.},
+  title     = {Evaluating the Implicit Acquisition of Second Language Vocabulary Using a Live Wallpaper},
+  booktitle = {Proceedings of the SIGCHI Conference on Human Factors in Computing Systems},
+  pages     = {1391--1400},
+  publisher = {Association for Computing Machinery},
+  year      = {2012},
+  doi       = {10.1145/2207676.2208598},
+  url       = {https://dl.acm.org/doi/10.1145/2207676.2208598}
+}
+
+
+% 【常時目に入るライブ壁紙／行動変容】
+% Androidのlive wallpaper上に、
+% glanceable（ちらっと見るだけで理解できる）なアバターを表示する研究。
+%
+% ユーザが専用アプリを開かなくても、
+% スマートフォンの利用中に壁紙が繰り返し目に入ることを利用している。
+%
+% → ライブ壁紙が「身近なインタラクション媒体」であることの例。
+% → ユーザへ何かを思い出させたり、意識させたりする用途。
+%
+% 自分メモ：
+% ・「ライブ壁紙は思い出させるのに向いている」という感じ。
+% ・日常生活の中で自然に接触する媒体として使える。
+% ・自分のグリッチとは用途が違うが、
+%   ライブ壁紙という媒体の性質を説明する材料になる。
+%
+% 使いどころ候補：
+% 第1章 研究背景
+% 第2章 ライブ壁紙／HCI関連研究
+@inproceedings{murray2013avatar,
+  author    = {Murray, Tylar and Jaimes, Luis Gabriel and Hekler, Eric B. and Spruijt-Metz, Donna and Raij, Andrew},
+  title     = {A Glanceable Mobile Avatar for Behavior Change},
+  booktitle = {Proceedings of the 4th Conference on Wireless Health},
+  pages     = {1--2},
+  publisher = {Association for Computing Machinery},
+  year      = {2013},
+  doi       = {10.1145/2534088.2534093},
+  url       = {https://dl.acm.org/doi/10.1145/2534088.2534093}
+}
+
+
+% 【近年のライブ壁紙研究／行動への介入】
+% Androidライブ壁紙を利用して、
+% absent-minded smartphone usage（無意識的なスマホ利用）へ
+% 働きかけるためのHCI研究。
+%
+% ユーザの利用状況に応じてライブ壁紙の表示が変化し、
+% ロック画面／ホーム画面という日常的に見る場所から
+% ユーザの意識へ働きかける。
+%
+% → 「ライブ壁紙は単なる装飾ではなく、
+%    ユーザの状態や行動と結びつくインタラクティブ媒体」
+% という例としてかなり重要。
+%
+% → Dearman・Murrayより新しく、
+%   現代のAndroidライブ壁紙研究の例として使いやすい。
+%
+% 自分メモ：
+% ・ロック／ホーム画面だからこそ、
+%   手軽かつ身近にユーザへインタラクトできる、という観点。
+% ・自分の研究も「わざわざ作品を見る」のではなく、
+%   普段使うスマホ上で体験する点が近い。
+% ・パーソナライズ／ユーザごとの違いの話にも
+%   後で繋げられる可能性あり。
+%
+% 使いどころ候補：
+% 第1章 研究背景
+% 第2章 ライブ壁紙関連研究
+% 第6章 パーソナライズの議論にも場合によっては再利用
+@inproceedings{nwagu2023chai,
+  author    = {Nwagu, Chukwuemeka and Orji, Rita},
+  title     = {Chai Wallpaper: A Mindfulness-Based Persuasive Intervention for Absent-Minded Smartphone Usage},
+  booktitle = {Adjunct Proceedings of the 31st ACM Conference on User Modeling, Adaptation and Personalization},
+  pages     = {16--21},
+  publisher = {Association for Computing Machinery},
+  year      = {2023},
+  doi       = {10.1145/3563359.3597444},
+  url       = {https://dl.acm.org/doi/10.1145/3563359.3597444}
+}
+
+
+% 2026-10-29: 本文の未登録引用を原典と照合して追加。
+% 確認箇所・本文リンクは reference-review.md を参照。
+@article{morgan2019calculated,
+  author = {Morgan, Carleigh},
+  title = {Calculated Error: Glitch Art, Compression Artefacts, and Digital Materiality},
+  journal = {A Peer-Reviewed Journal About},
+  volume = {8},
+  number = {1},
+  year = {2019},
+  doi = {10.7146/aprja.v8i1.115426},
+  url = {https://aprja.net/article/view/115426}
+}
+
+@online{apple_live_photo_wallpaper,
+  author = {{Apple}},
+  title = {{Live Photos}を{iPhone}のロック画面の壁紙に設定する},
+  url = {https://support.apple.com/ja-jp/120734},
+  urldate = {2026-10-29}
+}
+
+@online{apple_ios26_spatial_scenes,
+  author = {{Apple}},
+  title = {{iOS 26}の新機能},
+  url = {https://support.apple.com/ja-jp/guide/iphone/iphfed2c4091/26/ios/26},
+  urldate = {2026-10-29}
+}
+
+@inproceedings{parikh2020generative,
+  author = {Parikh, Devi},
+  title = {Predicting a Creator's Preferences In, and From, Interactive Generative Art},
+  booktitle = {Proceedings of the 11th International Conference on Computational Creativity},
+  year = {2020},
+  pages = {484--487},
+  url = {https://computationalcreativity.net/iccc20/papers/096-iccc20.pdf}
+}
+
+@article{krzyzaniak2022engaging,
+  author = {Krzyzaniak, Michael and Erdem, Çağri and Glette, Kyrre},
+  title = {What Makes Interactive Art Engaging?},
+  journal = {Frontiers in Computer Science},
+  volume = {4},
+  eid = {859496},
+  year = {2022},
+  doi = {10.3389/fcomp.2022.859496},
+  url = {https://www.frontiersin.org/journals/computer-science/articles/10.3389/fcomp.2022.859496/full}
+}
+
+@inproceedings{lin2012bewellplus,
+  author = {Lin, Mu and Lane, Nicholas D. and Mohammod, Mashfiqui and Yang, Xiaochao and Lu, Hong and Cardone, Giuseppe and Ali, Shahid and Doryab, Afsaneh and Berke, Ethan and Campbell, Andrew T. and Choudhury, Tanzeem},
+  title = {{BeWell+}: Multi-dimensional Wellbeing Monitoring with Community-guided User Feedback and Energy Optimization},
+  booktitle = {Proceedings of the Conference on Wireless Health},
+  year = {2012},
+  pages = {1--8},
+  publisher = {Association for Computing Machinery},
+  doi = {10.1145/2448096.2448106},
+  url = {https://pac.cs.cornell.edu/pubs/wirelesshealth2012_BeWell.pdf}
+}
+
+@inproceedings{murnane2020narrative,
+  author = {Murnane, Elizabeth L. and Jiang, Xin and Kong, Anna and Park, Michelle and Shi, Weili and Soohoo, Connor and Vink, Luke and Xia, Iris and Xin, Yu and Yang-Sammataro, John and Young, Grace and Zhi, Jenny and Moya, Paula and Landay, James A.},
+  title = {Designing Ambient Narrative-Based Interfaces to Reflect and Motivate Physical Activity},
+  booktitle = {Proceedings of the 2020 CHI Conference on Human Factors in Computing Systems},
+  year = {2020},
+  pages = {1--14},
+  publisher = {Association for Computing Machinery},
+  doi = {10.1145/3313831.3376478},
+  url = {https://stanfordhci.github.io/zuki/chi2020/files/zuki_chi2020_ACM.pdf}
+}

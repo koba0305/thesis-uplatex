@@ -1,0 +1,71 @@
+% !TEX program = uplatex
+% IA テンプレートの長い学士論文向け構成（章立てを維持）。
+\documentclass[a4paper,uplatex]{jsreport}
+
+\usepackage{iathesis}
+\usepackage[dvipdfmx]{graphicx,xcolor}
+\usepackage{listings}
+\usepackage{fancyvrb}
+\usepackage{appendix}
+\usepackage[utf8]{inputenc}
+\usepackage{csquotes}
+\usepackage[english]{babel}
+% 英文文献の言語設定を維持し、日本語論文の見出しを日本語にする。
+\addto\captionsenglish{%
+  \renewcommand{\contentsname}{目次}%
+  \renewcommand{\figurename}{図}%
+  \renewcommand{\tablename}{表}%
+  \renewcommand{\listfigurename}{図目次}%
+  \renewcommand{\listtablename}{表目次}%
+}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+% 日本語 CMap を持たない PDF ビューアでも表示できる Unicode マッピング。
+\usepackage[ipaex,unicode]{pxchfon}
+\usepackage{amsmath}
+\usepackage{booktabs}
+\usepackage{float}
+\usepackage{url}
+\urlstyle{same}
+\usepackage[dvipdfmx,hypertexnames=false]{hyperref}
+\usepackage{pxjahyper}
+\usepackage[backend=biber,style=numeric,sorting=none,backref=true]{biblatex}
+
+\graphicspath{{figures/}}
+\addbibresource{references.bib}
+\input{code_listings}
+\lstdefinelanguage{JSON}{
+  morestring=[b]",
+  morekeywords={true,false,null},
+  sensitive=true
+}
+
+\begin{document}
+% 表紙の各コマンドは iathesis.sty に合わせて本文内に置く。
+\input{frontmatter/titlepage}
+\maketitle
+
+\pagenumbering{roman}
+\setcounter{page}{1}
+\input{frontmatter/abstract-ja}
+\input{frontmatter/abstract-en}
+\makemokuji
+
+\clearpage
+\pagenumbering{arabic}
+\setcounter{page}{1}
+\pagestyle{plain}
+
+\input{chapters/01_introduction}
+\input{chapters/02_background}
+\input{chapters/03_proposal}
+\input{chapters/04_system}
+\input{chapters/05_preliminary_evaluation}
+\input{chapters/06_improvement}
+\input{chapters/07_evaluation}
+\input{chapters/08_discussion}
+\input{chapters/09_conclusion}
+
+\printbibliography[heading=bibintoc,title={参考文献}]
+% 謝辞が必要になったら、ここに \chapter*{謝辞} と本文を追加する。
+\end{document}
