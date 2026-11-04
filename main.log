@@ -1,4 +1,4 @@
-This is e-upTeX, Version 3.141592653-p4.1.2-u2.02-251130-2.6 (utf8.uptex) (TeX Live 2026) (preloaded format=uplatex 2026.3.22)  4 NOV 2026 00:53
+This is e-upTeX, Version 3.141592653-p4.1.2-u2.02-251130-2.6 (utf8.uptex) (TeX Live 2026) (preloaded format=uplatex 2026.3.22)  5 NOV 2026 02:29
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -809,9 +809,12 @@ Package hyperref Info: Link coloring OFF on input line 43.
 \@outlinefile=\write5
 \openout5 = `main.out'.
 
+
+
+Package hyperref Warning: Rerun to get /PageLabels entry.
+
 Package biblatex Info: Trying to load language 'english'...
 Package biblatex Info: ... file 'english.lbx' found.
-
 (/usr/local/texlive/2026/texmf-dist/tex/latex/biblatex/lbx/english.lbx
 File: english.lbx 2025/07/10 v3.21 biblatex localization (PK/MW)
 )
@@ -821,12 +824,12 @@ Package biblatex Info: Automatic encoding selection.
 \openout4 = `main.bcf'.
 
 Package biblatex Info: Trying to load bibliographic data...
-Package biblatex Info: ... file 'main.bbl' found.
+Package biblatex Info: ... file 'main.bbl' not found.
 
-(./main.bbl)
+No file main.bbl.
 Package biblatex Info: Reference section=0 on input line 43.
 Package biblatex Info: Reference segment=0 on input line 43.
- (./frontmatter/titlepage.tex
+(./frontmatter/titlepage.tex
 LaTeX Font Info:    Font shape `JT2/mc/m/n' will be
 (Font)              scaled to size 11.09619pt on input line 1.
 LaTeX Font Info:    Font shape `JY2/mc/m/n' will be
@@ -868,50 +871,15 @@ LaTeX Font Info:    Font shape `JT2/gt/m/n' will be
 (Font)              scaled to size 23.0061pt on input line 52.
 LaTeX Font Info:    Font shape `JY2/gt/m/n' will be
 (Font)              scaled to size 23.0061pt on input line 52.
- (./main.toc
-LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 2
-.
 
-(/usr/local/texlive/2026/texmf-dist/tex/latex/lm/ot1lmr.fd
-File: ot1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-)
-LaTeX Font Info:    Trying to load font information for OML+lmm on input line 2
-.
-
-(/usr/local/texlive/2026/texmf-dist/tex/latex/lm/omllmm.fd
-File: omllmm.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-)
-LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 
-2.
-
-(/usr/local/texlive/2026/texmf-dist/tex/latex/lm/omslmsy.fd
-File: omslmsy.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-)
-LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 
-2.
-
-(/usr/local/texlive/2026/texmf-dist/tex/latex/lm/omxlmex.fd
-File: omxlmex.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-)
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 2.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 2.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 2.
-LaTeX Font Info:    Font shape `JY2/mc/m/n' will be
-(Font)              scaled to size 6.47278pt on input line 2.
-LaTeX Font Info:    Font shape `JY2/mc/m/n' will be
-(Font)              scaled to size 4.62341pt on input line 2.
- [3
-
-
-])
+No file main.toc.
 \tf@toc=\write6
 \openout6 = `main.toc'.
 
- [4]
-(./chapters/01_introduction.tex
+[3
+
+
+] (./chapters/01_introduction.tex
 第1章
 LaTeX Font Info:    Font shape `JT2/mc/m/n' will be
 (Font)              scaled to size 19.17792pt on input line 1.
@@ -921,21 +889,133 @@ LaTeX Font Info:    Font shape `JT2/gt/m/n' will be
 (Font)              scaled to size 19.17792pt on input line 1.
 LaTeX Font Info:    Font shape `JY2/gt/m/n' will be
 (Font)              scaled to size 19.17792pt on input line 1.
+
+LaTeX Warning: Citation 'dearman2012wallpaper' on page 1 undefined on input lin
+e 39.
+
+LaTeX Font Info:    Font shape `JT2/mc/bx/n' in size <12> not available
+(Font)              Font shape `JT2/gt/m/n' tried instead on input line 39.
+LaTeX Font Info:    Font shape `JT2/gt/m/n' will be
+(Font)              scaled to size 11.09619pt on input line 39.
+LaTeX Font Info:    Font shape `JY2/mc/bx/n' in size <12> not available
+(Font)              Font shape `JY2/gt/m/n' tried instead on input line 39.
+LaTeX Font Info:    Font shape `JY2/gt/m/n' will be
+(Font)              scaled to size 11.09619pt on input line 39.
+
+LaTeX Warning: Citation 'murray2013avatar' on page 1 undefined on input line 39
+.
+
+
+LaTeX Warning: Citation 'nwagu2023chai' on page 1 undefined on input line 39.
+
+
+LaTeX Warning: Citation 'android16_wallpaper' on page 1 undefined on input line
+ 41.
+
 [1
 
 
 
-] [2] [3] [4] [5]) (./chapters/02_background.tex [6]
+]
+
+LaTeX Warning: Citation 'menkman2011momentum' on page 2 undefined on input line
+ 49.
+
+
+LaTeX Warning: Citation 'ito2013datamoshing' on page 2 undefined on input line 
+53.
+
+[2] [3] [4] [5]) (./chapters/02_background.tex [6]
 第2章
+
+LaTeX Warning: Citation 'menkman2011momentum' on page 7 undefined on input line
+ 5.
+
 [7
 
-] [8] [9] [10] [11]
-LaTeX Font Info:    Font shape `JT2/gt/m/n' will be
-(Font)              scaled to size 11.09619pt on input line 64.
-LaTeX Font Info:    Font shape `JY2/gt/m/n' will be
-(Font)              scaled to size 11.09619pt on input line 64.
- [12] [13] [14] [15] [16] [17])
-(./chapters/03_proposal.tex [18]
+]
+
+LaTeX Warning: Citation 'moradi2004glitch' on page 8 undefined on input line 14
+.
+
+
+LaTeX Warning: Citation 'moradi2004glitch' on page 8 undefined on input line 16
+.
+
+[8]
+
+LaTeX Warning: Citation 'menkman2011momentum' on page 9 undefined on input line
+ 28.
+
+
+LaTeX Warning: Citation 'morgan2019calculated' on page 9 undefined on input lin
+e 28.
+
+
+LaTeX Warning: Citation 'morgan2019calculated' on page 9 undefined on input lin
+e 30.
+
+
+LaTeX Warning: Citation 'menkman2011momentum' on page 9 undefined on input line
+ 32.
+
+[9] [10] [11]
+
+LaTeX Warning: Citation 'bedireristi2019glitch' on page 12 undefined on input l
+ine 61.
+
+
+LaTeX Warning: Citation 'parikh2020generative' on page 12 undefined on input li
+ne 65.
+
+
+LaTeX Warning: Citation 'krzyzaniak2022engaging' on page 12 undefined on input 
+line 67.
+
+[12] [13]
+
+LaTeX Warning: Citation 'android_wallpaper_service' on page 14 undefined on inp
+ut line 91.
+
+
+LaTeX Warning: Citation 'android16_wallpaper' on page 14 undefined on input lin
+e 94.
+
+
+LaTeX Warning: Citation 'apple_live_photo_wallpaper' on page 14 undefined on in
+put line 99.
+
+
+LaTeX Warning: Citation 'apple_ios26_spatial_scenes' on page 14 undefined on in
+put line 99.
+
+[14] [15]
+
+LaTeX Warning: Citation 'lin2012bewellplus' on page 16 undefined on input line 
+115.
+
+
+LaTeX Warning: Citation 'murnane2020narrative' on page 16 undefined on input li
+ne 117.
+
+
+LaTeX Warning: Citation 'nwagu2023chai' on page 16 undefined on input line 119.
+
+
+
+LaTeX Warning: Citation 'krzyzaniak2022engaging' on page 16 undefined on input 
+line 126.
+
+[16]
+
+LaTeX Warning: Citation 'parikh2020generative' on page 17 undefined on input li
+ne 136.
+
+
+LaTeX Warning: Citation 'krzyzaniak2022engaging' on page 17 undefined on input 
+line 136.
+
+[17]) (./chapters/03_proposal.tex [18]
 第3章
 [19
 
@@ -953,10 +1033,34 @@ LaTeX Font Info:    Font shape `JY2/gt/m/n' will be
 (Font)              scaled to size 7.39746pt on input line 98.
 LaTeX Font Info:    Font shape `JT2/mc/m/n' will be
 (Font)              scaled to size 4.62341pt on input line 99.
+LaTeX Font Info:    Font shape `JY2/mc/m/n' will be
+(Font)              scaled to size 4.62341pt on input line 99.
 LaTeX Font Info:    Font shape `JT2/mc/m/n' will be
 (Font)              scaled to size 8.32214pt on input line 106.
 LaTeX Font Info:    Font shape `JY2/mc/m/n' will be
 (Font)              scaled to size 8.32214pt on input line 106.
+LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 1
+07.
+ (/usr/local/texlive/2026/texmf-dist/tex/latex/lm/ot1lmr.fd
+File: ot1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+LaTeX Font Info:    Trying to load font information for OML+lmm on input line 1
+07.
+(/usr/local/texlive/2026/texmf-dist/tex/latex/lm/omllmm.fd
+File: omllmm.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 
+107.
+
+(/usr/local/texlive/2026/texmf-dist/tex/latex/lm/omslmsy.fd
+File: omslmsy.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 
+107.
+
+(/usr/local/texlive/2026/texmf-dist/tex/latex/lm/omxlmex.fd
+File: omxlmex.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <12> on input line 107.
 LaTeX Font Info:    External font `lmex10' loaded for size
@@ -982,6 +1086,14 @@ File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 [40
 
 ] [41]
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <10> on input line 302.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <7> on input line 302.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <5> on input line 302.
+LaTeX Font Info:    Font shape `JY2/mc/m/n' will be
+(Font)              scaled to size 6.47278pt on input line 302.
 LaTeX Font Info:    Calculating math sizes for size <> on input line 304.
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <> on input line 304.
@@ -1017,29 +1129,65 @@ Underfull \hbox (badness 1194) in paragraph at lines 487--488
 
 [48] [49] [50] [51]) (./chapters/05_preliminary_evaluation.tex [52]
 第6章
+
+LaTeX Warning: Reference `tab:preliminary_presets' on page 53 undefined on inpu
+t line 16.
+
 [53
 
 ] [54]
+
+LaTeX Warning: Reference `fig:p1_result' on page 55 undefined on input line 70.
+
+
 File: figures/experiment/p1_1.png Graphic file (type bmp)
 <figures/experiment/p1_1.png>
+
+LaTeX Warning: Reference `fig:p2_result' on page 55 undefined on input line 80.
+
+
 File: figures/experiment/p2_1.png Graphic file (type bmp)
 <figures/experiment/p2_1.png>
- [55]
+[55]
+
+LaTeX Warning: Reference `fig:p3_result' on page 56 undefined on input line 90.
+
+
 File: figures/experiment/p3_1.png Graphic file (type bmp)
 <figures/experiment/p3_1.png>
+
+LaTeX Warning: Reference `fig:p4_result' on page 56 undefined on input line 100
+.
+
 File: figures/experiment/p4_1.png Graphic file (type bmp)
 <figures/experiment/p4_1.png>
- [56]
+[56]
+
+LaTeX Warning: Reference `fig:p5_result' on page 57 undefined on input line 110
+.
+
 File: figures/experiment/p5_1.png Graphic file (type bmp)
 <figures/experiment/p5_1.png>
+
+LaTeX Warning: Reference `fig:p6_result' on page 57 undefined on input line 121
+.
+
 File: figures/experiment/p6_1.png Graphic file (type bmp)
 <figures/experiment/p6_1.png>
- [57]
+[57]
+
+LaTeX Warning: Reference `fig:p7_result' on page 58 undefined on input line 131
+.
+
 File: figures/experiment/p7_1.png Graphic file (type bmp)
 <figures/experiment/p7_1.png>
+
+LaTeX Warning: Reference `fig:p8_result' on page 58 undefined on input line 141
+.
+
 File: figures/experiment/p8_1.png Graphic file (type bmp)
 <figures/experiment/p8_1.png>
- [58] [59]) (./chapters/06_improvement.tex [60]
+[58] [59]) (./chapters/06_improvement.tex [60]
 第7章
 ) (./chapters/07_evaluation.tex [61
 
@@ -1053,46 +1201,49 @@ File: figures/experiment/p8_1.png Graphic file (type bmp)
 
 ]
 第10章
-) [64
+)
 
-]
-LaTeX Font Info:    Font shape `JT2/gt/m/it' in size <10> not available
-(Font)              Font shape `JT2/gt/m/n' tried instead on input line 69.
-LaTeX Font Info:    Font shape `JT2/gt/m/n' will be
-(Font)              scaled to size 9.24683pt on input line 69.
-LaTeX Font Info:    Font shape `JY2/gt/m/it' in size <10> not available
-(Font)              Font shape `JY2/gt/m/n' tried instead on input line 69.
-LaTeX Font Info:    Font shape `JY2/gt/m/n' will be
-(Font)              scaled to size 9.24683pt on input line 69.
-LaTeX Font Info:    Font shape `JT2/mc/m/sc' in size <10> not available
-(Font)              Font shape `JT2/mc/m/n' tried instead on input line 69.
-LaTeX Font Info:    Font shape `JT2/mc/m/n' will be
-(Font)              scaled to size 9.24683pt on input line 69.
-LaTeX Font Info:    Font shape `JY2/mc/m/sc' in size <10> not available
-(Font)              Font shape `JY2/mc/m/n' tried instead on input line 69.
-LaTeX Font Info:    Font shape `JY2/mc/m/n' will be
-(Font)              scaled to size 9.24683pt on input line 69.
- [65
+LaTeX Warning: Empty bibliography on input line 69.
 
-] [66] (./main.aux)
+[64
+
+] (./main.aux)
  ***********
 pLaTeX2e <2023-02-14u04>+1, based on
 LaTeX2e <2025-11-01>
 L3 programming layer <2026-01-19>
  ***********
-Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 3FD7119F528F19CFCBC84D49219F1FC7;7363.
+
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+
+Package rerunfilecheck Warning: File `main.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `main.out':
+(rerunfilecheck)             Before: D41D8CD98F00B204E9800998ECF8427E;0
+(rerunfilecheck)             After:  8D5F50A4527CF60EE04E5E67115B18B7;7198.
+
+Package biblatex Warning: Please (re)run Biber on the file:
+(biblatex)                main
+(biblatex)                and rerun LaTeX afterwards.
+
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 22987 strings out of 468171
- 396728 string characters out of 5434473
- 1318733 words of memory out of 5000000
- 51557 multiletter control sequences out of 15000+600000
- 804212 words of font info for 163 fonts, out of 8000000 for 9000
+ 22866 strings out of 468171
+ 392592 string characters out of 5434473
+ 1308700 words of memory out of 5000000
+ 51442 multiletter control sequences out of 15000+600000
+ 800152 words of font info for 162 fonts, out of 8000000 for 9000
  934 hyphenation exceptions out of 8191
- 84i,8n,93p,1055b,2350s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 84i,8n,93p,1055b,1793s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on main.dvi (71 pages, 312756 bytes).
+Output written on main.dvi (68 pages, 256464 bytes).
