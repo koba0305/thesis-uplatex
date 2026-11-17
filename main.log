@@ -1,4 +1,4 @@
-This is e-upTeX, Version 3.141592653-p4.1.2-u2.02-251130-2.6 (utf8.uptex) (TeX Live 2026) (preloaded format=uplatex 2026.3.22)  5 NOV 2026 02:37
+This is e-upTeX, Version 3.141592653-p4.1.2-u2.02-251130-2.6 (utf8.uptex) (TeX Live 2026) (preloaded format=uplatex 2026.3.22)  10 NOV 2026 03:34
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1022,23 +1022,39 @@ Underfull \hbox (badness 1194) in paragraph at lines 487--488
 ] [54]
 File: figures/experiment/p1_1.png Graphic file (type bmp)
 <figures/experiment/p1_1.png>
+File: figures/images/p1_1screenshot.png Graphic file (type bmp)
+<figures/images/p1_1screenshot.png>
 File: figures/experiment/p2_1.png Graphic file (type bmp)
 <figures/experiment/p2_1.png>
+File: figures/images/p2_1screenshot.png Graphic file (type bmp)
+<figures/images/p2_1screenshot.png>
  [55]
 File: figures/experiment/p3_1.png Graphic file (type bmp)
 <figures/experiment/p3_1.png>
+File: figures/images/p3_1screenshot.png Graphic file (type bmp)
+<figures/images/p3_1screenshot.png>
 File: figures/experiment/p4_1.png Graphic file (type bmp)
 <figures/experiment/p4_1.png>
+File: figures/images/p4_1screenshot.png Graphic file (type bmp)
+<figures/images/p4_1screenshot.png>
  [56]
 File: figures/experiment/p5_1.png Graphic file (type bmp)
 <figures/experiment/p5_1.png>
+File: figures/images/p5_1screenshot.png Graphic file (type bmp)
+<figures/images/p5_1screenshot.png>
 File: figures/experiment/p6_1.png Graphic file (type bmp)
 <figures/experiment/p6_1.png>
+File: figures/images/p6_1screenshot.png Graphic file (type bmp)
+<figures/images/p6_1screenshot.png>
  [57]
 File: figures/experiment/p7_1.png Graphic file (type bmp)
 <figures/experiment/p7_1.png>
+File: figures/images/p7_1screenshot.png Graphic file (type bmp)
+<figures/images/p7_1screenshot.png>
 File: figures/experiment/p8_1.png Graphic file (type bmp)
 <figures/experiment/p8_1.png>
+File: figures/images/p8_1screenshot.png Graphic file (type bmp)
+<figures/images/p8_1screenshot.png>
  [58] [59]) (./chapters/06_improvement.tex [60]
 第7章
 ) (./chapters/07_evaluation.tex [61
@@ -1087,12 +1103,12 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 22987 strings out of 468171
- 396728 string characters out of 5434473
- 1318643 words of memory out of 5000000
- 51557 multiletter control sequences out of 15000+600000
+ 23037 strings out of 468171
+ 398553 string characters out of 5434473
+ 1318795 words of memory out of 5000000
+ 51597 multiletter control sequences out of 15000+600000
  804212 words of font info for 163 fonts, out of 8000000 for 9000
  934 hyphenation exceptions out of 8191
  84i,8n,93p,1055b,2350s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on main.dvi (71 pages, 312348 bytes).
+Output written on main.dvi (71 pages, 313728 bytes).
